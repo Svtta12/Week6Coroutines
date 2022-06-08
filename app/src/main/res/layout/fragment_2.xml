@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40FFC2"
+    android:id="@+id/fragment2">
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_play"
+        style="@style/systemButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/roundedbutton"
+        android:gravity="center"
+        android:src="@drawable/ic_baseline_play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_stop"/>
+
+    <ImageButton
+        android:id="@+id/button_stop"
+        style="@style/systemButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/roundedbutton"
+        android:gravity="center"
+        android:src="@drawable/ic_baseline_stop"
+        app:layout_constraintStart_toEndOf="@id/button_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_replay"/>
+
+    <ImageButton
+        android:id="@+id/button_replay"
+        style="@style/systemButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/roundedbutton"
+        android:gravity="center"
+        android:src="@drawable/ic_baseline_replay"
+        app:layout_constraintStart_toEndOf="@id/button_stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
